@@ -8,25 +8,36 @@
     <title>Momentum</title>
 </head>
 <body>
+    <!-- 맨위에 시계 표시 -->
     <h1 id="clock"></h1>
+
+    <!-- 사용자 로그인 적용(세션) -->
     <form id="login-form" class="hidden">
         <input required maxlength="15" type="text" placeholder="What is your name?" />
         <input type="submit" value="login" />
     </form>
     
+    <!-- 사용자 로그인 완료되면 인사말 적용 -->
     <h1 id="greeting" class="hidden"></h1>
+
+    <!-- TODO list 적용 -->
     <form id="todo-form">
         <input type="text" placeholder="Write a To Do list" required />
     </form>
     <ul id="todo-list"></ul>
+
+    <!-- 하루의 명언 적용 -->
     <div id="quote">
         <span></span>
         <span></span>
     </div>
+
+    <!-- 날씨 적용 -->
     <div id="weather">
         <span></span>
         <span></span>
     </div>
+    
     <!-- Javascript 파일 import -->
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
